@@ -60,6 +60,8 @@ namespace bookthedoctor.Models
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
+        public string ID { get; set; }
+
     }
 
     public class RegisterViewModel
@@ -79,6 +81,8 @@ namespace bookthedoctor.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+        
+
     }
 
     public class ResetPasswordViewModel

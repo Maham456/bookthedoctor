@@ -12,6 +12,7 @@ namespace bookthedoctor.Controllers
         {
             return View();
         }
+        [Authorize]
         public ActionResult chooseuser()
         {
             return View();
